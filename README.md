@@ -3,11 +3,8 @@ Zuri Chat is an open source slack clone. However, it offers a lot more functiona
 
 
 
-
-
-
-# REMINDER:DETAIL
-### Description: Get details of a particular reminder
+# REMINDER:DELETE
+### Description: Delete reminder in a calendar widget
 ```sh
 PATH PARAMETERS: reminder_id(required)
 ```
@@ -15,7 +12,7 @@ PATH PARAMETERS: reminder_id(required)
 
 
 ## How it works
-####  It works when there is a ( get  request)made to a particular reminder_id to get details of the reminder linked to the reminder_id.
+####  It works when there is a (delete request)made to a particular reminder_id to delete the reminder linked to the reminder_id.
 
 ### HOW TO SET UP THE END POINT
 
@@ -24,9 +21,9 @@ These are ways to set up the end point to function properly:
 - With the help of python set up django framework
 - Create all necessary files like ( url.py  ,serializer.py, views.py)
 - Import all needed modules
-- It is important you set your database up with models.py
-- Copy the URL for the reminder get request
--   ‘GET’\https://calender.zuri.chat/api/v1/reminder_detail/reminder_id
+- It is important you set your database in setup ur database with models.py
+- Copy the URL for the reminder delete request
+-   ‘DELETE’\https://calender.zuri.chat/api/v1/delete_reminder/reminder_id
 - Paste it where it is needed in the code which is  the url.py 
 That is a summary of how the end point is being set up.
 
@@ -34,18 +31,18 @@ That is a summary of how the end point is being set up.
 #### STEPS ON HOW TO USE 
 - We must make sure we have a reminder_id (to trace the particular reminder)
 -  We then use the URL 
-https://calender.zuri.chat/api/v1/reminder_detail/reminder_id
+https://calender.zuri.chat/api/v1/delete_reminder/reminder_id
 - We would receive a response message, you can see below list of different  responses
 
 ### RESPONSES;
 #### 200          
-#### Successful
+#### Deleted reminder Successfully
 
 ```sh
 {
   "status": 200,
   "message": "string",
-  "data": string
+  "data": null
 }
 
 ```
@@ -62,3 +59,12 @@ https://calender.zuri.chat/api/v1/reminder_detail/reminder_id
 }
 
 ```
+
+
+
+
+
+
+
+
+
