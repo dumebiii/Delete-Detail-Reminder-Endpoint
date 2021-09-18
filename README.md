@@ -64,9 +64,6 @@ https://calender.zuri.chat/api/v1/delete_reminder/reminder_id
 
 
 
-# Zuri Chat Core API (Calendar plugin ) (1.0.0)
-Zuri Chat is an open source slack clone. However, it offers a lot more functionality via a plugin system where each room can be provided by a different plugin provider.
-
 
 
 
