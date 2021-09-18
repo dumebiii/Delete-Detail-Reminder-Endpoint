@@ -85,8 +85,7 @@ These are ways to set up the end point to function properly:
 
 - With the help of python set up django framework
 - Create all necessary files like ( url.py  ,serializer.py, views.py)
-- Import all needed modules
-- It is important you set your database up with models.py
+- Import all needed modules and setup your database with models.py
 - Copy the URL for the reminder get request
 -   ‘GET’\https://calender.zuri.chat/api/v1/reminder_detail/reminder_id
 - Paste it where it is needed in the code which is  the url.py 
