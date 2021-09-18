@@ -20,12 +20,11 @@ These are ways to set up the end point to function properly:
 
 - With the help of python set up django framework
 - Create all necessary files like ( url.py  ,serializer.py, views.py)
-- Import all needed modules
-- It is important you set your database in setup ur database with models.py
+- Import all needed modules and setup your database with models.py
 - Copy the URL for the reminder delete request
 -   ‘DELETE’\https://calender.zuri.chat/api/v1/delete_reminder/reminder_id
 - Paste it where it is needed in the code which is  the url.py 
-That is a summary of how the end point is being set up.
+
 
 
 #### STEPS ON HOW TO USE 
